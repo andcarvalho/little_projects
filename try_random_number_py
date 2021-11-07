@@ -1,0 +1,14 @@
+import random
+
+rand_num = random.randint(1,10)
+got_it = False
+while got_it == False:
+    guess_num = int(input('Guess a random  from 1 to 10: '))
+    if guess_num > rand_num:
+        print('Higher than random')
+    elif guess_num < rand_num:
+            print('Lower than random')
+    elif guess_num == rand_num:
+            got_it = True
+            print('Correct number!')
+           
