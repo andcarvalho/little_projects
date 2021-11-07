@@ -1,0 +1,22 @@
+speed = int(input('Car speed: '))
+max_speed = 80 
+if speed <= max_speed:
+    print('No traffic ticket')
+elif speed > max_speed and speed <= max_speed + 10:
+    print('Light traffic ticket')
+elif speed > max_speed + 11 and speed <= max_speed + 20:
+    print('Severe traffic ticket')
+elif speed > max_speed + 20:
+    print('Highly severe traffic ticket')
+    
+// OR // 
+
+speed = int(input('Car speed': '))
+if speed in range(0,80 + 1):
+    print('No traffic ticket')
+elif speed in range(80,90 + 1):
+    print('Light traffic ticket')
+elif speed in range(90,100 + 1):
+    print('Severe traffic ticket')
+elif speed > 102:
+    print('Highly sever ticket')
